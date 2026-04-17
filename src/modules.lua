@@ -502,7 +502,7 @@ function M.encode_base64( data )
 end
 
 function M.get_addon_version()
-  local version = M.api.GetAddOnMetadata( "RollFor", "Version" )
+  local version = M.api.GetAddOnMetadata( "GoyRoll", "Version" )
   local major, minor = string.match( version, "(%d+)%.(%d+)" )
 
   local result = {
